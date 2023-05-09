@@ -8,7 +8,7 @@ import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/
 
 import selectors from 'data/selectors';
 import { Headings } from 'data/constants/grades';
-import { getLocalizedPercentSign } from 'i18n';
+import { getLocalizedPercentSign } from 'i18n/utils';
 
 import messages from './messages';
 import Fields from './Fields';
