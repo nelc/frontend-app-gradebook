@@ -16,7 +16,8 @@
     "semantic-release": "semantic-release",
     "start": "fedx-scripts webpack-dev-server --progress",
     "test": "TZ=GMT fedx-scripts jest --coverage --passWithNoTests",
-    "watch-tests": "jest --watch"
+    "watch-tests": "jest --watch",
+    "replace-variables": "paragon replace-variables -p src -t usage"
   },
   "author": "edX",
   "license": "AGPL-3.0",
