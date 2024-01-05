@@ -1,7 +1,7 @@
 import { StrictDict } from 'utils';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig, getPath } from '@edx/frontend-platform';
 
-export const routePath = `${getConfig().PUBLIC_PATH}:courseId`;
+export const routePath = `${getPath(getConfig().PUBLIC_PATH)}:courseId`;
 
 export const views = StrictDict({
   grades: 'grades',
