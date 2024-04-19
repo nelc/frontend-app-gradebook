@@ -28,11 +28,11 @@
     "extends @edx/browserslist-config"
   ],
   "dependencies": {
-    "@edx/brand": "npm:@edx/brand-openedx@^1.2.0",
+    "@edx/brand": "github:nelc/brand-openedx#open-release/palm.nelp",
     "@edx/frontend-component-footer": "12.0.0",
     "@edx/frontend-component-header": "4.0.3",
-    "@edx/frontend-platform": "4.4.0",
-    "@edx/paragon": "19.25.4",
+    "@edx/frontend-platform": "npm:@edunext/frontend-platform@4.7.0",
+    "@edx/paragon": "npm:@edunext/paragon@20.47.0",
     "@edx/reactifex": "^2.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-build": "12.8.27",
+    "@edx/frontend-build": "github:nelc/frontend-build#open-release/palm.nelp",
     "@testing-library/react": "^12.1.0",
     "axios": "0.21.2",
     "axios-mock-adapter": "^1.17.0",
