@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import { getConfig } from '@edx/frontend-platform';
 import { AppProvider } from '@edx/frontend-platform/react';
 
 import Footer from '@edx/frontend-component-footer';
@@ -27,7 +28,7 @@ const App = () => (
             />
           </Switch>
         </main>
-        <Footer logo={process.env.LOGO_POWERED_BY_OPEN_EDX_URL_SVG} />
+        <Footer logo={getConfig().LOGO_TRADEMARK_URL || process.env.LOGO_POWERED_BY_OPEN_EDX_URL_SVG} />
       </div>
     </Router>
   </AppProvider>
