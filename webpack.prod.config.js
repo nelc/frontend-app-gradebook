@@ -1,6 +1,7 @@
 const fs = require('fs');
 const dotenv = require('dotenv');
 const path = require('path');
+const originalEnvConfig = { ...process.env }; //Store original process env vars
 const { createConfig } = require('@edx/frontend-build');
 
 const config = createConfig('webpack-prod');
@@ -21,7 +22,7 @@ config.module.rules[0].exclude = /node_modules\/(?!(query-string|split-on-first|
 // The following code overrides this behavior in order to use the .env file.
 const envConfig = dotenv.parse(fs.readFileSync('.env'));
 Object.keys(envConfig).forEach(k => {
-  process.env[k] = envConfig[k];
+  process.env[k] = originalEnvConfig[k] ?? envConfig[k];
 });
 
 module.exports = config;
