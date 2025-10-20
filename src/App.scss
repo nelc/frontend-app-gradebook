@@ -13,3 +13,7 @@ $input-focus-box-shadow: var(--pgn-elevation-form-input-base); // hack to get up
 @import "./components/BulkManagementHistoryView/BulkManagementHistoryView";
 @import "./components/WithSidebar/WithSidebar";
 @import "./components/GradebookFilters/GradebookFilters";
+
+@import "@edx/brand/paragon/fonts";
+@import "@edx/brand/paragon/variables";
+@import "@edx/brand/paragon/overrides";
